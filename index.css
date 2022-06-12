@@ -1,0 +1,36 @@
+body{
+    background-image: repeating-radial-gradient(blue,skyblue 2%, white 1%);
+    padding: 0px;
+    margin: 0px;
+}
+#sadak_div {
+    margin: auto;
+    left: 50vw;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 7px 0px 15px #666,
+                -7px 0px 15px #666  ;
+    width: 30vw;
+}
+#sadak_img {
+    width: 30vw;
+    animation: moving 2s infinite;
+    animation-timing-function: linear;
+}
+@keyframes moving {
+    from {transform: translateY(-50%);}
+    to {transform: translateY(0%);}
+}
+#car_img {
+    position: fixed;
+    width: 4vw;
+    transition: left 0.1s, bottom 0.1s;
+}
+.cars {
+    position: fixed;
+    width: 4vw;
+}
+@keyframes oppcars {
+    from {top: -20vh;}
+    to {top: 120vh;}
+}
