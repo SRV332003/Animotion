@@ -3,7 +3,7 @@ var vh=document.getElementById('sadak_div').clientHeight/100;
 var cid=null;
 var carbtm=100*vh;
 var m_h=4*vw*parseInt(document.getElementById('car_img').height)/parseInt(document.getElementById('car_img').height)
-var xmove=0,ymove=0,carno=0;flag=true,flag2=true;
+var xmove=0,ymove=0,score=0,carno=0;flag=true,flag2=true;
 document.getElementById('car_img').style.left=48*vw+'px';
 document.getElementById('car_img').style.top=80*vh+'px';
 //console.log(vh);
@@ -33,6 +33,8 @@ function gadiPel(){
         document.getElementById('c'+carno).style.bottom=carbtm+'px';
         if (y<(-20*vh)){
             clearInterval(cid);
+            score++;
+            
             document.getElementById('c'+carno).style.display='none';
             cid=1;
         }
