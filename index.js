@@ -29,7 +29,7 @@ function hallabol(){
 function gadiPel(){
     if (flag2){
         var y=parseInt(document.getElementById('c'+carno).style.bottom);
-        carbtm-=2;
+        carbtm-=1;
         document.getElementById('c'+carno).style.bottom=carbtm+'px';
         if (y<(-20*vh)){
             clearInterval(cid);
